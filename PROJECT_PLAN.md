@@ -30,7 +30,7 @@ Aplikácia bude slúžiť na správu materiálu skautského zboru, umožní sled
 
 ### 3.1. Správa položiek
 - Pridávanie, aktualizovanie a mazanie položiek inventára.
-- Kategorizácia položiek podľa typu, použitia a príslušenstva.
+- Kategorizácia položiek podľa typu, použitia a príslušenstva (pozri sekciu "Návrh kategorizácie materiálu").
 
 ### 3.2. Prehľad vybavenia
 - Hlavná stránka zobrazí kategórie položiek a počet voľných/zapožičaných položiek v každej kategórii.
@@ -65,7 +65,45 @@ Aplikácia bude slúžiť na správu materiálu skautského zboru, umožní sled
 
 ---
 
-## 5. Návrh databázy
+## 5. Návrh kategorizácie materiálu
+
+Materiál v skautskom zbore sa môže kategorizovať na základe typu, použitia a príslušenstva. Tu sú niektoré návrhy kategórií:
+
+### Táborové vybavenie
+- Stany
+- Spacie vaky a karimatky
+- Kuchynské vybavenie (kotlíky, plynové variče, ešusy)
+- Osvetlenie (baterky, čelovky, lampáše)
+- Turistické vybavenie (kompasy, mapy)
+
+### Športové vybavenie
+- Lopty (futbal, volejbal)
+- Športové potreby (laná, stuhy, frisbee)
+- Vodné športy (kajaky, pádla, vesty)
+
+### Odznaky a uniformy
+- Uniformy
+- Odznaky a insignie
+- Náramky, šatky a iné skautské doplnky
+
+### Nástroje a pracovné vybavenie
+- Náradie (kladivá, sekery, píly)
+- Lano a výstroj na lezenie
+- Prvky pre stavbu (kladky, kotvy)
+
+### IT a technika
+- Projektory, reproduktory
+- Notebooky, tablety
+- Fotoaparáty, kamery
+
+### Lekárske potreby
+- Prvá pomoc
+- Dezinfekčné prostriedky
+- Lekárničky
+
+---
+
+## 6. Návrh databázy
 
 ### Tabuľky:
 
@@ -103,33 +141,35 @@ Aplikácia bude slúžiť na správu materiálu skautského zboru, umožní sled
 
 ---
 
-## 6. Návrh UI
+## 7. Návrh UI
 
-### 6.1. Hlavná stránka (Dashboard)
+### 7.1. Hlavná stránka (Dashboard)
 - Zobrazenie kategórií s počtom dostupných položiek.
 - Vyhľadávacie pole na rýchle nájdenie položiek.
 - Rýchly prístup k sekciám "Požičané položky" a "Inventúra".
 
-### 6.2. Stránka kategórie
+### 7.2. Stránka kategórie
 - Zobrazenie položiek v danej kategórii.
 - Filtrovanie podľa stavu (dostupné, zapožičané, v oprave) a miesta uloženia.
 
-### 6.3. Detail položky
+### 7.3. Detail položky
 - Zobrazenie detailných informácií o položke (názov, stav, história používania).
 - Tlačidlá pre "Požičať", "Vrátiť", "Označiť ako poškodené".
 
-### 6.4. Správa požičania
+### 7.4. Správa požičania
 - Formulár pre požičanie položiek.
 - Možnosť nastavenia termínu návratu a upozornenia na prekročenie doby požičania.
 
-### 6.5. Inventúra a údržba
+### 7.5. Inventúra a údržba
 - Možnosť označovať položky, ktoré boli skontrolované alebo opravené.
 - Vytváranie reportov o stave materiálu.
 
 ---
 
-## 7. Zálohovanie a nasadenie
+## 8. Zálohovanie a nasadenie
 
 - Automatizované zálohovanie databázy (napríklad cez cron job).
 - Použitie CI/CD na plynulé nasadenie aplikácie na server (GitHub Actions alebo GitLab CI).
 - Nasadenie na cloudovú platformu (DigitalOcean, AWS).
+
+---
